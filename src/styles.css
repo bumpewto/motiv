@@ -1,3 +1,62 @@
-body {
-  font-family: sans-serif;
+@font-face {
+  font-family: TiemposText;
+  src: url("./fonts/Tiempos-Regular.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: TiemposText;
+  src: url("./fonts/TiemposTextWeb-Semibold.woff") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: Apercu;
+  src: url("./fonts/Apercu.woff") format("woff");
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.page {
+  font-family: TiemposText, sans-serif;
+  font-variant: common-ligatures slashed-zero;
+  color: #111;
+  margin-left: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  display: grid;
+  grid: repeat(3, 15%) auto 10% / 15% auto 10% 15%;
+  gap: 2rem;
+}
+.send {
+  grid-column: 1 / span 2;
+}
+.dest {
+  grid-column: 4;
+  grid-row: 2;
+}
+.object {
+  grid-column: 2 / span 2;
+  grid-row: 3;
+
+  font-size: inherit;
+}
+.message {
+  grid-column: 2 / span 2;
+  grid-row: 4;
+}
+.sign {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+@media print {
+  html {
+    font-size: 12.5px;
+  }
+  #sb__open-sandbox69 {
+    display: none;
+  }
 }
