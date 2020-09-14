@@ -13,6 +13,7 @@
   font-family: Apercu;
   src: url("./fonts/Apercu.woff") format("woff");
 }
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -47,6 +48,7 @@ html {
   grid-column: 2 / span 2;
   grid-row: 4;
 }
+
 .sign {
   grid-column: 3;
   grid-row: 5;
@@ -58,5 +60,6 @@ html {
   }
   #sb__open-sandbox69 {
     display: none;
+    visibility: hidden;
   }
 }
