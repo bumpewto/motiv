@@ -28,7 +28,7 @@ html {
   margin-bottom: 0;
 
   display: grid;
-  grid: repeat(3, 15%) auto 10% / 15% auto 10% 15%;
+  grid: 12% 12% 5% auto 10% / 10% auto 10% 20%;
   gap: 2rem;
 }
 .send {
